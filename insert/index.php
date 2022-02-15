@@ -29,15 +29,15 @@
             <h1 class="card-tittle">Insert (Crear)</h1>
             <div class="col-12">
                 <label for="nombre" class="form-label">nombre</label>
-                <input type="text" class="form-control" id="Nombre" name="nombre" placeholder="Juanito Perez">
+                <input type="text" class="form-control" id="Nombre" name="nombre" placeholder="Maximiliano Gales">
             </div>
             <div class="col-12">
                 <label for="telefono" class="form-label">Teléfono</label>
-                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="8881234">
+                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="3124567832">
             </div>
             <div class="col-12">
                 <label for="correo" class="form-label">Correo</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="juanito.perez@example.com">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Maxi@example.com">
             </div>
             <button class="btn btn-primary col-12  mt-3">Guardar</button>
         </form>

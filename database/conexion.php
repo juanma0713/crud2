@@ -1,6 +1,6 @@
 <?php
 
-require_once "config.php";
+require_once "config.php";//solo muestra una vez en pantalla lo requerido
 
 $connection = mysqli_connect(HOST_DB,USER_DB,PASSWORD_DB,NAME_DB);
 
