@@ -15,6 +15,9 @@ define('APP_URL', 'http://localhost/crud2/')
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="<?php echo APP_URL;?>/insert">Insert</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="<?php echo APP_URL;?>/listar">Listar</a>
+        </li>
       </ul>
     </div>
   </div>

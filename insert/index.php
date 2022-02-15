@@ -9,8 +9,22 @@
     <link rel="stylesheet" href="./../CSS/bootstrap.min.css">
 </head>
 
-<body>   
-    <div class="card col-8 mt-5 mx-auto" style="width: 18rem;">
+<body>  <?php include_once "./../views/menu.php"?>
+  <div class="container">
+      <?php 
+      if(isset($_GET['status'])) {
+          ?>
+          <div class="row">
+             <div class="alert alert-success" role="alert">
+                  contacto almacenado
+             </div>
+          </div>
+          <?php
+        }
+      
+      ?>
+  </div>
+    <div class="card col-8 mt-5 mx-auto">
         <form action="./save.php" method="POST" class="card-body">
             <h1 class="card-tittle">Insert (Crear)</h1>
             <div class="col-12">
