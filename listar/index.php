@@ -3,6 +3,9 @@ function listar()
 {
     require_once "./../database/conexion.php";
     $query = "SELECT * FROM contactos";
+
+
+    
     $data = mysqli_query($connection, $query, MYSQLI_ASSOC);
 
     foreach($data as $row){
