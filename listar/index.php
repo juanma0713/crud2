@@ -4,8 +4,10 @@ function listar()
     require_once "./../database/conexion.php";
     $query = "SELECT * FROM contactos";
 
+if(isset($_POST['buscar'])){
+    $query = $query." WHERE nombre LIKE '%".$_POST["buscar"]."%'";
+}
 
-    
     $data = mysqli_query($connection, $query, MYSQLI_ASSOC);
 
     foreach($data as $row){
@@ -15,6 +17,7 @@ function listar()
             <td><?php echo $row['nombre']; ?></td>
             <td><?php echo $row['telefono']; ?></td>
             <td><?php echo $row['email']; ?></td>
+            <td><a class="btn btn-primary btn-sm" href="<?php echo APP_URL; ?>/details/index.php?id=<?php echo $row['id'];?>">Detalles</a></td>
         </tr>
         <?php 
     }
